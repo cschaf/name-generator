@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namen Generator 🌟</title>
+    <!-- Verknüpfung zur externen CSS-Datei -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Namen Generator 🌟</h1>
+        <p class="subtitle">Entdecke coole Namen aus verschiedenen Kategorien!</p>
+        
+        <!-- Kategorien-Auswahl -->
+        <div class="selection-buttons" id="categoryButtons">
+            <button class="selection-btn active" data-category="gen-z">
+                🚀 Gen-Z
+            </button>
+            <button class="selection-btn" data-category="classic">
+                📚 Klassisch
+            </button>
+            <button class="selection-btn" data-category="nature">
+                🌳 Natur
+            </button>
+            <button class="selection-btn" data-category="unique">
+                ✨ Einzigartig
+            </button>
+        </div>
+
+        <!-- Geschlechts-Auswahl -->
+        <div class="selection-buttons" id="genderButtons">
+            <button class="selection-btn active" data-gender="male">
+                👦 Männlich
+            </button>
+            <button class="selection-btn" data-gender="female">
+                👧 Weiblich
+            </button>
+        </div>
+        
+        <button class="generate-btn" onclick="generateName()">
+            ✨ Namen generieren ✨
+        </button>
+        
+        <div class="name-display" id="nameDisplay" style="display: none;">
+            <div class="generated-name" id="generatedName"></div>
+            <div class="name-info" id="nameInfo"></div>
+            <button class="add-favorite-btn" onclick="addToFavorites()">
+                ❤️ Zu Favoriten hinzufügen
+            </button>
+        </div>
+        
+        <div class="favorites">
+            <h3>💖 Meine Favoriten</h3>
+            <div id="favoritesList"></div>
+        </div>
+
+        <!-- Nachrichtenbox -->
+        <div id="messageBox" class="message-box"></div>
+    </div>
+
+    <!-- Verknüpfung zur externen JavaScript-Datei (als Modul) -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+
+  
