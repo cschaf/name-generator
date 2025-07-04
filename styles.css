@@ -1,0 +1,250 @@
+/* Allgemeine Stile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* Einheitliche Schriftart */
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 600px; /* Etwas breiter für Kategorien */
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative; /* Für die Nachrichtenbox */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Button-Stile für Geschlecht und Kategorie */
+.selection-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Ermöglicht Umbruch auf kleinen Bildschirmen */
+    gap: 10px; /* Kleinerer Spalt für mehr Buttons */
+    margin-bottom: 20px; /* Weniger Abstand */
+    justify-content: center;
+}
+
+.selection-btn {
+    padding: 12px 25px; /* Etwas kleineres Padding */
+    border: none;
+    border-radius: 25px;
+    font-size: 1em; /* Etwas kleinere Schrift */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    backdrop-filter: blur(5px);
+    flex-grow: 1; /* Ermöglicht Buttons, den verfügbaren Platz auszufüllen */
+    min-width: 120px; /* Mindestbreite für Buttons */
+}
+
+.selection-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Kleinerer Schatten */
+}
+
+.selection-btn.active {
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    transform: scale(1.05);
+}
+
+/* Generieren-Button */
+.generate-btn {
+    padding: 18px 35px; /* Etwas kleineres Padding */
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em; /* Etwas kleinere Schrift */
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff9a9e, #fecfef);
+    color: #333;
+    margin-bottom: 25px; /* Weniger Abstand */
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.generate-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Kleinerer Schatten */
+}
+
+.generate-btn:active {
+    transform: translateY(0);
+}
+
+/* Namensanzeige */
+.name-display {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 25px; /* Etwas weniger Padding */
+    margin-bottom: 20px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.generated-name {
+    font-size: 2.2em; /* Etwas kleinere Schrift */
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 8px; /* Weniger Abstand */
+    animation: fadeIn 0.5s ease;
+}
+
+.name-info {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1em; /* Etwas kleinere Schrift */
+    font-style: italic;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Favoriten */
+.favorites {
+    margin-top: 25px; /* Weniger Abstand */
+    text-align: left;
+}
+
+.favorites h3 {
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.favorite-item {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    font-size: 0.95em; /* Etwas kleinere Schrift */
+}
+
+.favorite-item:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateX(5px);
+}
+
+.remove-btn {
+    background: rgba(255, 0, 0, 0.6);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85em; /* Etwas kleinere Schrift */
+    transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+    background: rgba(255, 0, 0, 0.8);
+}
+
+.add-favorite-btn {
+    background: rgba(0, 255, 0, 0.6);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    font-size: 1em;
+}
+
+.add-favorite-btn:hover {
+    background: rgba(0, 255, 0, 0.8);
+    transform: scale(1.05);
+}
+
+.emoji {
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+
+/* Nachrichtenbox */
+.message-box {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none; /* Ermöglicht Klicks durch die Box hindurch */
+}
+
+.message-box.show {
+    opacity: 1;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .selection-buttons {
+        flex-direction: column;
+        gap: 8px; /* Kleinerer Spalt für mobile Ansicht */
+    }
+    
+    .selection-btn {
+        width: 100%; /* Volle Breite für Buttons auf kleinen Bildschirmen */
+        min-width: unset;
+    }
+
+    .generated-name {
+        font-size: 2em;
+    }
+
+    .message-box {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+  
