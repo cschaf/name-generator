@@ -40,6 +40,13 @@ async function loadNameData() {
             usedNames[category] = { male: [], female: [] };
         }
         console.log('Namensdaten erfolgreich geladen:', nameData);
+
+        // Favoriten aus localStorage laden
+        const storedFavorites = localStorage.getItem('favorites');
+        if (storedFavorites) {
+            favorites = JSON.parse(storedFavorites);
+        }
+
         generateName(); // Ersten Namen generieren, nachdem Daten geladen sind
         updateFavoritesList(); // Favoritenliste aktualisieren
     } catch (error) {
@@ -139,6 +146,7 @@ function addToFavorites() {
         category: currentCategory // Kategorie speichern
     });
     updateFavoritesList();
+    localStorage.setItem('favorites', JSON.stringify(favorites)); // Favoriten im localStorage speichern
     showMessage('Name zu Favoriten hinzugefügt! ❤️', 'success');
     
     // Visuelles Feedback am Button
@@ -160,6 +168,7 @@ function removeFromFavorites(index) {
     if (index >= 0 && index < favorites.length) {
         const removedName = favorites.splice(index, 1)[0];
         updateFavoritesList();
+        localStorage.setItem('favorites', JSON.stringify(favorites)); // Favoriten im localStorage speichern
         showMessage(`"${removedName.name}" aus Favoriten entfernt. 🗑️`, 'info');
     }
 }
