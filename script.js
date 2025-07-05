@@ -316,74 +316,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Namensdaten laden und dann den ersten Namen generieren
     loadNameData();
 
-    // "Show More/Less" Button Funktionalität
-    const categoryScrollContainer = document.getElementById('categoryScrollContainer');
-    const showMoreLessBtn = document.getElementById('showMoreLessBtn');
-    const collapsedHeight = 120; // Define collapsed height in px matching CSS
-
-    function updateButtonState(isExpanded) {
-        if (!categoryScrollContainer || !showMoreLessBtn) return;
-
-        if (isExpanded) {
-            categoryScrollContainer.style.maxHeight = '500px'; // Or a sufficiently large value
-            showMoreLessBtn.textContent = 'Weniger anzeigen';
-            showMoreLessBtn.style.display = 'block';
-        } else {
-            // To check if overflow would occur in collapsed state,
-            // temporarily allow full height, measure, then decide.
-            const currentMaxHeight = categoryScrollContainer.style.maxHeight;
-            const currentOverflowY = categoryScrollContainer.style.overflowY;
-
-            // Temporarily remove height restriction to measure full content height
-            categoryScrollContainer.style.maxHeight = 'none';
-            categoryScrollContainer.style.overflowY = 'visible'; // Ensure scrollHeight is accurate
-            const scrollHeight = categoryScrollContainer.scrollHeight;
-
-            // Restore visual state before making final decision for button
-            categoryScrollContainer.style.maxHeight = currentMaxHeight; // Could be null or specific if set
-            categoryScrollContainer.style.overflowY = currentOverflowY;
-
-            // Now apply collapsed height for visual effect
-            categoryScrollContainer.style.maxHeight = `${collapsedHeight}px`;
-
-            if (scrollHeight > collapsedHeight) {
-                showMoreLessBtn.textContent = 'Mehr anzeigen';
-                showMoreLessBtn.style.display = 'block';
-            } else {
-                showMoreLessBtn.style.display = 'none';
-            }
-        }
-    }
-
-    function checkInitialButtonState() {
-        if (!categoryScrollContainer || !showMoreLessBtn) return;
-        // Ensure initial state matches CSS (collapsed)
-        categoryScrollContainer.classList.remove('expanded');
-        categoryScrollContainer.style.maxHeight = `${collapsedHeight}px`;
-
-        // Measure full content height to decide if button should be visible initially
-        const originalMaxHeight = categoryScrollContainer.style.maxHeight;
-        const originalOverflowY = categoryScrollContainer.style.overflowY;
-
-        categoryScrollContainer.style.maxHeight = 'none'; // Allow full height for measurement
-        categoryScrollContainer.style.overflowY = 'visible';
-        const scrollHeight = categoryScrollContainer.scrollHeight;
-
-        categoryScrollContainer.style.maxHeight = originalMaxHeight; // Restore
-        categoryScrollContainer.style.overflowY = originalOverflowY; // Restore
-
-        if (scrollHeight > collapsedHeight) {
-            showMoreLessBtn.textContent = 'Mehr anzeigen';
-            showMoreLessBtn.style.display = 'block';
-        } else {
-            showMoreLessBtn.style.display = 'none';
-        }
-        // Ensure the container is visually collapsed as per initial CSS intent
-        categoryScrollContainer.style.maxHeight = `${collapsedHeight}px`;
-    }
-
+    // Event Listener für "Show More/Less" Button Funktionalität
+    // Die Funktionen updateButtonState und checkInitialButtonState sind jetzt global
     if (categoryScrollContainer && showMoreLessBtn) {
-        // Set initial state correctly
+        // Set initial state correctly when DOM is ready,
+        // but ensure it's also called after buttons are populated.
         checkInitialButtonState();
 
         showMoreLessBtn.addEventListener('click', () => {
@@ -400,4 +337,66 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+
+// "Show More/Less" Button Funktionalität - jetzt im globalen Scope
+function updateButtonState(isExpanded) {
+    if (!categoryScrollContainer || !showMoreLessBtn) return;
+
+    if (isExpanded) {
+        categoryScrollContainer.style.maxHeight = '500px'; // Or a sufficiently large value
+        showMoreLessBtn.textContent = 'Weniger anzeigen';
+        showMoreLessBtn.style.display = 'block';
+    } else {
+        // To check if overflow would occur in collapsed state,
+        // temporarily allow full height, measure, then decide.
+        const currentMaxHeight = categoryScrollContainer.style.maxHeight;
+        const currentOverflowY = categoryScrollContainer.style.overflowY;
+
+        // Temporarily remove height restriction to measure full content height
+        categoryScrollContainer.style.maxHeight = 'none';
+        categoryScrollContainer.style.overflowY = 'visible'; // Ensure scrollHeight is accurate
+        const scrollHeight = categoryScrollContainer.scrollHeight;
+
+        // Restore visual state before making final decision for button
+        categoryScrollContainer.style.maxHeight = currentMaxHeight; // Could be null or specific if set
+        categoryScrollContainer.style.overflowY = currentOverflowY;
+
+        // Now apply collapsed height for visual effect
+        categoryScrollContainer.style.maxHeight = `${collapsedHeight}px`;
+
+        if (scrollHeight > collapsedHeight) {
+            showMoreLessBtn.textContent = 'Mehr anzeigen';
+            showMoreLessBtn.style.display = 'block';
+        } else {
+            showMoreLessBtn.style.display = 'none';
+        }
+    }
+}
+
+function checkInitialButtonState() {
+    if (!categoryScrollContainer || !showMoreLessBtn) return;
+    // Ensure initial state matches CSS (collapsed)
+    categoryScrollContainer.classList.remove('expanded');
+    categoryScrollContainer.style.maxHeight = `${collapsedHeight}px`;
+
+    // Measure full content height to decide if button should be visible initially
+    const originalMaxHeight = categoryScrollContainer.style.maxHeight;
+    const originalOverflowY = categoryScrollContainer.style.overflowY;
+
+    categoryScrollContainer.style.maxHeight = 'none'; // Allow full height for measurement
+    categoryScrollContainer.style.overflowY = 'visible';
+    const scrollHeight = categoryScrollContainer.scrollHeight;
+
+    categoryScrollContainer.style.maxHeight = originalMaxHeight; // Restore
+    categoryScrollContainer.style.overflowY = originalOverflowY; // Restore
+
+    if (scrollHeight > collapsedHeight) {
+        showMoreLessBtn.textContent = 'Mehr anzeigen';
+        showMoreLessBtn.style.display = 'block';
+    } else {
+        showMoreLessBtn.style.display = 'none';
+    }
+    // Ensure the container is visually collapsed as per initial CSS intent
+    categoryScrollContainer.style.maxHeight = `${collapsedHeight}px`;
+}
           
