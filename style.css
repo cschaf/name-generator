@@ -288,6 +288,12 @@ h1 {
 
     .category-scroll-container {
         max-height: 105px; /* Adjust initial height for mobile, approx 2 rows */
+        padding: 10px; /* Default padding for mobile */
+    }
+
+    .category-scroll-container:not(.expanded) {
+        /* Specific padding for collapsed mobile view */
+        padding: 15px 10px; /* More vertical padding, less horizontal if needed */
     }
 
     .category-scroll-container.expanded {
