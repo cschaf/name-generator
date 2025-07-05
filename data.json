@@ -52,7 +52,6 @@
                 { "name": "Zephyr", "info": "Wie ein sanfter Wind" }
             ],
             "unisex": [
-                { "name": "Sage", "info": "Weise und geschlechtsneutral" },
                 { "name": "Indie", "info": "Unabhängig und kreativ" },
                 { "name": "Quinn", "info": "Stark und geschlechtsneutral" },
                 { "name": "Kai", "info": "Kurz, prägnant und cool" },
@@ -65,9 +64,7 @@
                 { "name": "Skye", "info": "Himmelshoch und grenzenlos" },
                 { "name": "Wren", "info": "Kleiner Vogel, große Persönlichkeit" },
                 { "name": "Ember", "info": "Glühende Leidenschaft" },
-                { "name": "Iris", "info": "Regenbogen-Göttin" },
                 { "name": "Rebel", "info": "Aufständisch und frei" },
-                { "name": "Storm", "info": "Kraftvoll und unvorhersagbar" },
                 { "name": "Celeste", "info": "Himmlisch und strahlend" },
                 { "name": "Kaia", "info": "Erde auf Griechisch" },
                 { "name": "Aura", "info": "Geheimnisvolle Ausstrahlung" },
@@ -180,7 +177,6 @@
                 { "name": "Rowan", "info": "Eberesche, keltischer Baum des Lebens" },
                 { "name": "Lark", "info": "Lerche, frei und singend" },
                 { "name": "Winter", "info": "Jahreszeit, klar und rein" },
-                { "name": "Storm", "info": "Sturm, kraftvoll und wild" },
                 { "name": "Vale", "info": "Tal, friedlich und geschützt" }
             ],
             "female": [
@@ -215,8 +211,7 @@
                 { "name": "Rune", "info": "Geheimnis, nordisch" },
                 { "name": "Koa", "info": "Krieger, hawaiianisch" },
                 { "name": "Lior", "info": "Mein Licht, hebräisch" },
-                { "name": "Cael", "info": "Himmlisch, selten und kraftvoll" },
-                { "name": "Zephyr", "info": "Sanfter Wind, poetisch und leicht" }
+                { "name": "Cael", "info": "Himmlisch, selten und kraftvoll" }
             ],
             "unisex": [
                 { "name": "Blaise", "info": "Feurig, ungewöhnlich und energisch" },
@@ -300,11 +295,11 @@
             ],
             "unisex": [
                 { "name": "Nova", "info": "Neuer Stern, hell und kraftvoll" },
-                { "name": "Echo", "info": "Widerhall, subtil und modern" },
                 { "name": "Lux", "info": "Licht (Latein), klar und hell" },
                 { "name": "Zen", "info": "Kurz, modern und spirituell" },
                 { "name": "Cyber", "info": "Digital und futuristisch" },
-                { "name": "Flux", "info": "Wandel und Bewegung" }
+                { "name": "Flux", "info": "Wandel und Bewegung" },
+                { "name": "Storm", "info": "Kraftvoll und unvorhersagbar" }
             ],
             "female": [
                 { "name": "Vesper", "info": "Abendstern, geheimnisvoll" },
@@ -313,8 +308,81 @@
                 { "name": "Seren", "info": "Stern (Walisisch)" },
                 { "name": "Andromeda", "info": "Galaxie, mythologisch" },
                 { "name": "Juno", "info": "Römische Göttin, königlich" },
-                { "name": "Elektra", "info": "Strahlend, elektrisch" },
-                { "name": "Aria", "info": "Melodie, auch futuristisch interpretiert" }
+                { "name": "Elektra", "info": "Strahlend, elektrisch" }
+            ]
+        }
+    },
+    "pokemon-characters": {
+        "icon": "⚡️",
+        "genders": {
+            "male": [
+                { "name": "Rocko", "info": "Arenaleiter und treuer Begleiter (Brock)" },
+                { "name": "Gary", "info": "Der ewige Rivale von Ash (Gary Oak)" },
+                { "name": "Alain", "info": "Starker Trainer aus der Kalos-Region" },
+                { "name": "Volkner", "info": "Elektrisierender Arenaleiter aus Sinnoh" },
+                { "name": "Goh", "info": "Ehrgeiziger Trainer, will alle Pokémon fangen" },
+                { "name": "Natural", "info": "Geheimnisvoller König von Team Plasma (N)" }
+            ],
+            "unisex": [
+                { "name": "Evoli", "info": "Das Wandlungs-Pokémon mit vielen Entwicklungen (Eevee)" }
+            ],
+            "female": [
+                { "name": "Misty", "info": "Arenaleiterin von Azuria City" },
+                { "name": "Maike", "info": "Energiegeladene Koordinatorin aus Hoenn (May)" },
+                { "name": "Lucia", "info": "Selbstbewusste Koordinatorin aus Sinnoh (Dawn)" },
+                { "name": "Serena", "info": "Elegante Performerin aus der Kalos-Region" },
+                { "name": "Jessie", "info": "Hartnäckiges Mitglied von Team Rocket" },
+                { "name": "Cynthia", "info": "Die ungeschlagene Championesse von Sinnoh" }
+            ]
+        }
+    },
+    "video-game-heroes": {
+        "icon": "🎮",
+        "genders": {
+            "male": [
+                { "name": "Link", "info": "Der stumme Held von Hyrule (The Legend of Zelda)" },
+                { "name": "Cloud", "info": "Söldner mit mysteriöser Vergangenheit (Final Fantasy VII)" },
+                { "name": "Kratos", "info": "Der Geist von Sparta, Gott des Krieges (God of War)" },
+                { "name": "Ezio", "info": "Meisterassassine der Renaissance (Assassin's Creed)" },
+                { "name": "Leon", "info": "Überlebender von Raccoon City (Resident Evil)" },
+                { "name": "Geralt", "info": "Der Hexer von Riva (The Witcher)" }
+            ],
+            "unisex": [
+                { "name": "Shepard", "info": "Retter/in der Galaxie (Mass Effect)" },
+                { "name": "Frisk", "info": "Das Menschenkind aus der Unterwelt (Undertale)" },
+                { "name": "Corrin", "info": "Prinz/Prinzessin zweier Königreiche (Fire Emblem)" }
+            ],
+            "female": [
+                { "name": "Lara", "info": "Ikonische Archäologin und Abenteurerin (Tomb Raider)" },
+                { "name": "Aloy", "info": "Maschinenjägerin in einer post-apokalyptischen Welt (Horizon)" },
+                { "name": "Samus", "info": "Kopfgeldjägerin im Power Suit (Metroid)" },
+                { "name": "Zelda", "info": "Die weise Prinzessin von Hyrule (The Legend of Zelda)" },
+                { "name": "Chun-Li", "info": "Die erste Kämpferin der Fighting-Game-Geschichte (Street Fighter)" },
+                { "name": "Ellie", "info": "Überlebenskünstlerin in einer harten Welt (The Last of Us)" }
+            ]
+        }
+    },
+    "fantasy-legends": {
+        "icon": "⚔️",
+        "genders": {
+            "male": [
+                { "name": "Aragorn", "info": "Der rechtmäßige König von Gondor (Herr der Ringe)" },
+                { "name": "Legolas", "info": "Elbischer Prinz mit scharfem Blick (Herr der Ringe)" },
+                { "name": "Anomander", "info": "Herrscher der Tiste Andii (Spiel der Götter)" },
+                { "name": "Rincewind", "info": "Der feige Zauberer der Scheibenwelt (Discworld)" },
+                { "name": "Elric", "info": "Anti-Held und Träger des Sturmbringers" },
+                { "name": "Kvothe", "info": "Der Königsmörder, legendärer Arkanist (Die Königsmörder-Chronik)" }
+            ],
+            "unisex": [
+                { "name": "Shadowheart", "info": "Geheimnisvolle Klerikerin des Shar (Baldur's Gate 3)" }
+            ],
+            "female": [
+                { "name": "Arwen", "info": "Unsterbliche Elbin, Abendstern ihres Volkes (Herr der Ringe)" },
+                { "name": "Galadriel", "info": "Mächtige Elbenherrscherin (Herr der Ringe)" },
+                { "name": "Yennefer", "info": "Mächtige und willensstarke Zauberin (The Witcher)" },
+                { "name": "Daenerys", "info": "Die Mutter der Drachen (Das Lied von Eis und Feuer)" },
+                { "name": "Ciri", "info": "Das Kind der Vorsehung mit besonderen Kräften (The Witcher)" },
+                { "name": "Vin", "info": "Mächtige Allomantin aus Luthadel (Mistborn)" }
             ]
         }
     }
