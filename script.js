@@ -235,56 +235,84 @@ document.addEventListener('DOMContentLoaded', function() {
     // "Show More/Less" Button Funktionalität
     const categoryScrollContainer = document.getElementById('categoryScrollContainer');
     const showMoreLessBtn = document.getElementById('showMoreLessBtn');
+    const collapsedHeight = 120; // Define collapsed height in px matching CSS
 
-    function checkCategoryOverflow() {
-        if (categoryScrollContainer && showMoreLessBtn) {
-            // It's important to check the state *after* any class changes might affect layout.
-            // Using requestAnimationFrame ensures the DOM has updated.
-            requestAnimationFrame(() => {
-                const isExpanded = categoryScrollContainer.classList.contains('expanded');
-                // Force a reflow to get the correct scrollHeight after class change
-                categoryScrollContainer.style.maxHeight = isExpanded ? '500px' : '120px';
+    function updateButtonState(isExpanded) {
+        if (!categoryScrollContainer || !showMoreLessBtn) return;
 
-                // Recalculate if content is overflowing with the new state
-                // We need to temporarily allow overflow to measure scrollHeight accurately when collapsed
-                const originalOverflowY = categoryScrollContainer.style.overflowY;
-                if (!isExpanded) {
-                    categoryScrollContainer.style.overflowY = 'visible';
-                }
-                const scrollHeight = categoryScrollContainer.scrollHeight;
-                if (!isExpanded) {
-                    categoryScrollContainer.style.overflowY = originalOverflowY;
-                }
+        if (isExpanded) {
+            categoryScrollContainer.style.maxHeight = '500px'; // Or a sufficiently large value
+            showMoreLessBtn.textContent = 'Weniger anzeigen';
+            showMoreLessBtn.style.display = 'block';
+        } else {
+            // To check if overflow would occur in collapsed state,
+            // temporarily allow full height, measure, then decide.
+            const currentMaxHeight = categoryScrollContainer.style.maxHeight;
+            const currentOverflowY = categoryScrollContainer.style.overflowY;
 
-                const clientHeight = categoryScrollContainer.clientHeight;
-                const isContentOverflowing = scrollHeight > clientHeight;
+            // Temporarily remove height restriction to measure full content height
+            categoryScrollContainer.style.maxHeight = 'none';
+            categoryScrollContainer.style.overflowY = 'visible'; // Ensure scrollHeight is accurate
+            const scrollHeight = categoryScrollContainer.scrollHeight;
 
-                if (isExpanded) { // If expanded, always show the button to allow collapsing
-                    showMoreLessBtn.style.display = 'block';
-                    showMoreLessBtn.textContent = 'Weniger anzeigen';
-                } else { // If collapsed
-                    if (isContentOverflowing) {
-                        showMoreLessBtn.style.display = 'block';
-                        showMoreLessBtn.textContent = 'Mehr anzeigen';
-                    } else {
-                        showMoreLessBtn.style.display = 'none';
-                    }
-                }
-            });
+            // Restore visual state before making final decision for button
+            categoryScrollContainer.style.maxHeight = currentMaxHeight; // Could be null or specific if set
+            categoryScrollContainer.style.overflowY = currentOverflowY;
+
+            // Now apply collapsed height for visual effect
+            categoryScrollContainer.style.maxHeight = `${collapsedHeight}px`;
+
+            if (scrollHeight > collapsedHeight) {
+                showMoreLessBtn.textContent = 'Mehr anzeigen';
+                showMoreLessBtn.style.display = 'block';
+            } else {
+                showMoreLessBtn.style.display = 'none';
+            }
         }
     }
 
+    function checkInitialButtonState() {
+        if (!categoryScrollContainer || !showMoreLessBtn) return;
+        // Ensure initial state matches CSS (collapsed)
+        categoryScrollContainer.classList.remove('expanded');
+        categoryScrollContainer.style.maxHeight = `${collapsedHeight}px`;
+
+        // Measure full content height to decide if button should be visible initially
+        const originalMaxHeight = categoryScrollContainer.style.maxHeight;
+        const originalOverflowY = categoryScrollContainer.style.overflowY;
+
+        categoryScrollContainer.style.maxHeight = 'none'; // Allow full height for measurement
+        categoryScrollContainer.style.overflowY = 'visible';
+        const scrollHeight = categoryScrollContainer.scrollHeight;
+
+        categoryScrollContainer.style.maxHeight = originalMaxHeight; // Restore
+        categoryScrollContainer.style.overflowY = originalOverflowY; // Restore
+
+        if (scrollHeight > collapsedHeight) {
+            showMoreLessBtn.textContent = 'Mehr anzeigen';
+            showMoreLessBtn.style.display = 'block';
+        } else {
+            showMoreLessBtn.style.display = 'none';
+        }
+        // Ensure the container is visually collapsed as per initial CSS intent
+        categoryScrollContainer.style.maxHeight = `${collapsedHeight}px`;
+    }
+
     if (categoryScrollContainer && showMoreLessBtn) {
-        // Initial check
-        checkCategoryOverflow();
+        // Set initial state correctly
+        checkInitialButtonState();
 
         showMoreLessBtn.addEventListener('click', () => {
+            const isCurrentlyExpanded = categoryScrollContainer.classList.contains('expanded');
             categoryScrollContainer.classList.toggle('expanded');
-            // Call checkCategoryOverflow to update button text and visibility
-            checkCategoryOverflow();
+            updateButtonState(!isCurrentlyExpanded); // Update based on the new state
         });
 
-        window.addEventListener('resize', checkCategoryOverflow); // Check on window resize
+        window.addEventListener('resize', () => {
+            // When resizing, maintain current expanded/collapsed state and re-evaluate button
+            const isExpanded = categoryScrollContainer.classList.contains('expanded');
+            updateButtonState(isExpanded);
+        });
     }
 });
 
