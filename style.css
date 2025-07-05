@@ -271,8 +271,9 @@ h1 {
     }
 
     #genderButtons {
-        flex-direction: column; /* Gender buttons can stack */
+        /* flex-direction: column; */ /* Gender buttons can stack - entfernt für nebeneinander Darstellung */
         gap: 8px;
+        justify-content: center; /* Stellt sicher, dass die Buttons zentriert sind, wenn weniger Platz benötigt wird */
     }
     
     .selection-btn {
@@ -282,9 +283,12 @@ h1 {
         flex-grow: 1; /* Allow buttons to grow */
     }
 
-    /* Ensure gender selection buttons take full width in their column layout */
+    /* Ensure gender selection buttons take appropriate width */
     #genderButtons .selection-btn {
-        width: 100%;
+        width: auto; /* Zurück zu auto, damit sie nebeneinander passen */
+        flex-grow: 0; /* Verhindert, dass sie den gesamten verfügbaren Platz einnehmen, wenn sie nebeneinander sind */
+        min-width: 60px; /* Kleinere Mindestbreite nur für die Icon-Buttons */
+        padding: 10px 15px; /* Ggf. Padding anpassen für kleinere Buttons */
     }
 
     .category-scroll-container {
