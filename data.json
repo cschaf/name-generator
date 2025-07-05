@@ -15,7 +15,6 @@
                 { "name": "Axel", "info": "Rockig und rebellisch" },
                 { "name": "Koda", "info": "Nativ-amerikanisch, bedeutet 'Freund'" },
                 { "name": "Zander", "info": "Moderne Form von Alexander" },
-                { "name": "Orion", "info": "Sternbild-inspiriert" },
                 { "name": "Ryder", "info": "Abenteuerlich und dynamisch" },
                 { "name": "Crew", "info": "Teamgeist und Zusammenhalt" },
                 { "name": "Ace", "info": "Spitzenklasse und siegreich" },
@@ -54,10 +53,7 @@
             ],
             "unisex": [
                 { "name": "Sage", "info": "Weise und geschlechtsneutral" },
-                { "name": "Phoenix", "info": "Symbolisch und einzigartig" },
-                { "name": "River", "info": "Naturverbunden und fließend" },
                 { "name": "Indie", "info": "Unabhängig und kreativ" },
-                { "name": "Rowan", "info": "Naturverbunden und stark" },
                 { "name": "Quinn", "info": "Stark und geschlechtsneutral" },
                 { "name": "Kai", "info": "Kurz, prägnant und cool" },
                 { "name": "Alex", "info": "Kurzform von Alexander/Alexandra, klassisch unisex" },
@@ -65,11 +61,7 @@
                 { "name": "Casey", "info": "Irisch, 'wachsam', freundlich und offen" }
             ],
             "female": [
-                { "name": "Luna", "info": "Mystisch und mondschön" },
                 { "name": "Aria", "info": "Melodisch und elegant" },
-                { "name": "Ivy", "info": "Naturverbunden und stark" },
-                { "name": "Willow", "info": "Wie der biegsame Weidenbaum" },
-                { "name": "Raven", "info": "Mysteriös und intelligent" },
                 { "name": "Skye", "info": "Himmelshoch und grenzenlos" },
                 { "name": "Wren", "info": "Kleiner Vogel, große Persönlichkeit" },
                 { "name": "Ember", "info": "Glühende Leidenschaft" },
@@ -86,8 +78,6 @@
                 { "name": "Eden", "info": "Paradiesisch und rein" },
                 { "name": "Faye", "info": "Fee und Magie" },
                 { "name": "Gemma", "info": "Edelstein und Kostbarkeit" },
-                { "name": "Hazel", "info": "Nussbraun und natürlich" },
-                { "name": "Indigo", "info": "Tiefblau und mystisch" },
                 { "name": "Jade", "info": "Grüner Edelstein" },
                 { "name": "Kiara", "info": "Hell und strahlend" },
                 { "name": "Mira", "info": "Wunder und Schönheit" },
@@ -137,8 +127,7 @@
                 { "name": "Christian", "info": "Der Christusgläubige" },
                 { "name": "Martin", "info": "Der dem Mars Geweihte" },
                 { "name": "Stefan", "info": "Der Gekrönte" },
-                { "name": "Andreas", "info": "Der Männliche, Tapfere" },
-                { "name": "Felix", "info": "Der Glückliche" }
+                { "name": "Andreas", "info": "Der Männliche, Tapfere" }
             ],
             "unisex": [
                 { "name": "Charlie", "info": "Kurzform von Charles/Charlotte, freundlich und klassisch" },
@@ -177,22 +166,26 @@
                 { "name": "Brooks", "info": "Bach, fließend und klar" },
                 { "name": "Glen", "info": "Tal, friedlich und grün" },
                 { "name": "Heath", "info": "Heide, wild und ungezähmt" },
-                { "name": "Orion", "info": "Sternbild, himmlisch und majestätisch" },
                 { "name": "Birch", "info": "Birke, schlank und widerstandsfähig" },
                 { "name": "Reed", "info": "Schilf, flexibel und naturverbunden" },
                 { "name": "Wolf", "info": "Wolf, stark und instinktiv" },
-                { "name": "Ash", "info": "Esche, alter Baum" }
+                { "name": "Ash", "info": "Esche, alter Baum" },
+                { "name": "Cedar", "info": "Zeder, kraftvoll und aromatisch" },
+                { "name": "Flint", "info": "Feuerstein, hart und zuverlässig" },
+                { "name": "Ridge", "info": "Bergrücken, stark und erhaben" }
             ],
             "unisex": [
-                { "name": "River", "info": "Fluss, naturverbunden" },
+                { "name": "River", "info": "Fluss, naturverbunden und fließend" },
                 { "name": "Sky", "info": "Himmel, grenzenlos und frei" },
                 { "name": "Rowan", "info": "Eberesche, keltischer Baum des Lebens" },
                 { "name": "Lark", "info": "Lerche, frei und singend" },
-                { "name": "Winter", "info": "Jahreszeit, klar und rein" }
+                { "name": "Winter", "info": "Jahreszeit, klar und rein" },
+                { "name": "Storm", "info": "Sturm, kraftvoll und wild" },
+                { "name": "Vale", "info": "Tal, friedlich und geschützt" }
             ],
             "female": [
                 { "name": "Willow", "info": "Weidenbaum, anmutig und flexibel" },
-                { "name": "Ivy", "info": "Efeu, beständig und wachsende Schönheit" },
+                { "name": "Ivy", "info": "Efeu, beständig und wachsend" },
                 { "name": "Lily", "info": "Lilie, rein und schön" },
                 { "name": "Rose", "info": "Rose, klassisch und duftend" },
                 { "name": "Dawn", "info": "Morgenröte, Neubeginn und Hoffnung" },
@@ -203,7 +196,9 @@
                 { "name": "Daisy", "info": "Gänseblümchen, frisch und fröhlich" },
                 { "name": "Coral", "info": "Koralle, farbenfroh und maritim" },
                 { "name": "Brooke", "info": "Bach, sanft und fließend" },
-                { "name": "Blossom", "info": "Blüte, zart und schön" }
+                { "name": "Blossom", "info": "Blüte, zart und schön" },
+                { "name": "Sage", "info": "Salbei, weise und heilend" },
+                { "name": "Iris", "info": "Schwertlilie, elegant und farbenfroh" }
             ]
         }
     },
@@ -211,7 +206,6 @@
         "icon": "✨",
         "genders": {
             "male": [
-                { "name": "Zephyr", "info": "Sanfter Wind, einzigartig und leicht" },
                 { "name": "Kaelen", "info": "Variante von Kellen, modern und selten" },
                 { "name": "Jett", "info": "Dunkler Edelstein, schnell und kraftvoll" },
                 { "name": "Quillon", "info": "Schwert, stark und selten" },
@@ -220,17 +214,19 @@
                 { "name": "Xylon", "info": "Aus dem Wald, einzigartig und naturverbunden" },
                 { "name": "Rune", "info": "Geheimnis, nordisch" },
                 { "name": "Koa", "info": "Krieger, hawaiianisch" },
-                { "name": "Lior", "info": "Mein Licht, hebräisch" }
+                { "name": "Lior", "info": "Mein Licht, hebräisch" },
+                { "name": "Cael", "info": "Himmlisch, selten und kraftvoll" },
+                { "name": "Zephyr", "info": "Sanfter Wind, poetisch und leicht" }
             ],
             "unisex": [
-                { "name": "Indigo", "info": "Dunkelblau, einzigartig und künstlerisch" },
                 { "name": "Blaise", "info": "Feurig, ungewöhnlich und energisch" },
                 { "name": "Jules", "info": "Kurzform von Julian/Julia, modern und schick" },
                 { "name": "Emerson", "info": "Altenglisch, 'Sohn des Emery', literarisch und modern" },
-                { "name": "Sawyer", "info": "Englisch, 'Holzfäller', abenteuerlich und naturverbunden" }
+                { "name": "Sawyer", "info": "Englisch, 'Holzfäller', abenteuerlich und naturverbunden" },
+                { "name": "Phoenix", "info": "Wiedergeburt, mythologisch und kraftvoll" },
+                { "name": "Indigo", "info": "Tiefblau, künstlerisch und mystisch" }
             ],
             "female": [
-                { "name": "Lyra", "info": "Sternbild der Leier, melodisch und selten" },
                 { "name": "Seraphina", "info": "Feurig, himmlisch und elegant" },
                 { "name": "Evanthe", "info": "Schöne Blume, selten und poetisch" },
                 { "name": "Aurelia", "info": "Die Goldene, strahlend und klassisch-modern" },
@@ -242,7 +238,8 @@
                 { "name": "Fable", "info": "Märchen, einzigartig und erzählerisch" },
                 { "name": "Odessa", "info": "Odyssee, abenteuerlich" },
                 { "name": "Reverie", "info": "Tagtraum, poetisch" },
-                { "name": "Solara", "info": "Sonne, strahlend" }
+                { "name": "Solara", "info": "Sonne, strahlend" },
+                { "name": "Lyra", "info": "Sternbild der Leier, melodisch und himmlisch" }
             ]
         }
     },
@@ -259,14 +256,16 @@
                 { "name": "Loki", "info": "Gott des Schabernacks (Nordisch)" },
                 { "name": "Ares", "info": "Gott des Krieges (Griechisch)" },
                 { "name": "Poseidon", "info": "Gott des Meeres (Griechisch)" },
-                { "name": "Ra", "info": "Sonnengott (Ägyptisch)" }
+                { "name": "Ra", "info": "Sonnengott (Ägyptisch)" },
+                { "name": "Odin", "info": "Allvater der nordischen Götter" },
+                { "name": "Hades", "info": "Herrscher der Unterwelt (Griechisch)" }
             ],
             "unisex": [
-                { "name": "Phoenix", "info": "Symbol für Wiedergeburt, kulturübergreifend" },
-                { "name": "Artemis", "info": "Griechische Gottheit der Jagd (oft weiblich, aber Name unisex verwendet)" },
-                { "name": "Orion", "info": "Mächtiger Jäger (Griechisch), auch Sternbild" },
-                { "name": "Nyx", "info": "Griechische Gottheit der Nacht (oft weiblich, Name unisex)" },
-                { "name": "Jupiter", "info": "Römischer König der Götter (oft männlich, Name unisex)" }
+                { "name": "Orion", "info": "Mächtiger Jäger, auch Sternbild (Griechisch)" },
+                { "name": "Artemis", "info": "Göttin der Jagd (Griechisch)" },
+                { "name": "Nyx", "info": "Gottheit der Nacht (Griechisch)" },
+                { "name": "Jupiter", "info": "Römischer König der Götter" },
+                { "name": "Echo", "info": "Bergnymphe aus der griechischen Mythologie" }
             ],
             "female": [
                 { "name": "Athena", "info": "Göttin der Weisheit (Griechisch)" },
@@ -277,7 +276,9 @@
                 { "name": "Frigg", "info": "Göttin der Ehe (Nordisch)" },
                 { "name": "Persephone", "info": "Königin der Unterwelt (Griechisch)" },
                 { "name": "Nut", "info": "Himmelsgöttin (Ägyptisch)" },
-                { "name": "Eos", "info": "Göttin der Morgenröte (Griechisch)" }
+                { "name": "Eos", "info": "Göttin der Morgenröte (Griechisch)" },
+                { "name": "Daphne", "info": "Nymphe, verwandelt in Lorbeerbaum (Griechisch)" },
+                { "name": "Sif", "info": "Göttin mit goldenem Haar (Nordisch)" }
             ]
         }
     },
@@ -287,30 +288,33 @@
             "male": [
                 { "name": "Cipher", "info": "Geheimnisvoll und technisch" },
                 { "name": "Jaxon", "info": "Moderne Schreibweise, stark" },
-                { "name": "Orion", "info": "Sternbild, kosmisch" },
                 { "name": "Vector", "info": "Mathematisch und präzise" },
                 { "name": "Zenith", "info": "Höhepunkt, Gipfel" },
                 { "name": "Kael", "info": "Kurz und kraftvoll" },
                 { "name": "Ryler", "info": "Modern und dynamisch" },
                 { "name": "Cygnus", "info": "Sternbild Schwan, elegant" },
                 { "name": "Nexus", "info": "Verbindungspunkt, zentral" },
-                { "name": "Tycho", "info": "Nach Astronom Tycho Brahe" }
+                { "name": "Tycho", "info": "Nach Astronom Tycho Brahe" },
+                { "name": "Quantum", "info": "Physikalisch und futuristisch" },
+                { "name": "Vortex", "info": "Wirbel, dynamisch und kraftvoll" }
             ],
             "unisex": [
                 { "name": "Nova", "info": "Neuer Stern, hell und kraftvoll" },
-                { "name": "Orion", "info": "Sternbild, kosmisch und stark" },
                 { "name": "Echo", "info": "Widerhall, subtil und modern" },
                 { "name": "Lux", "info": "Licht (Latein), klar und hell" },
-                { "name": "Zen", "info": "Kurz, modern und spirituell" }
+                { "name": "Zen", "info": "Kurz, modern und spirituell" },
+                { "name": "Cyber", "info": "Digital und futuristisch" },
+                { "name": "Flux", "info": "Wandel und Bewegung" }
             ],
             "female": [
-                { "name": "Lyra", "info": "Sternbild, musikalisch" },
                 { "name": "Vesper", "info": "Abendstern, geheimnisvoll" },
                 { "name": "Celestia", "info": "Himmlisch, erhaben" },
                 { "name": "Oriana", "info": "Goldener Sonnenaufgang" },
                 { "name": "Seren", "info": "Stern (Walisisch)" },
                 { "name": "Andromeda", "info": "Galaxie, mythologisch" },
-                { "name": "Juno", "info": "Römische Göttin, königlich" }
+                { "name": "Juno", "info": "Römische Göttin, königlich" },
+                { "name": "Elektra", "info": "Strahlend, elektrisch" },
+                { "name": "Aria", "info": "Melodie, auch futuristisch interpretiert" }
             ]
         }
     }
