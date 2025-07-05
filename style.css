@@ -287,7 +287,7 @@ h1 {
     #genderButtons .selection-btn {
         width: auto; /* Zurück zu auto, damit sie nebeneinander passen */
         flex-grow: 0; /* Verhindert, dass sie den gesamten verfügbaren Platz einnehmen, wenn sie nebeneinander sind */
-        min-width: 60px; /* Kleinere Mindestbreite nur für die Icon-Buttons */
+        min-width: 130px; /* Increased min-width for icons + text */
         padding: 10px 15px; /* Ggf. Padding anpassen für kleinere Buttons */
     }
 
