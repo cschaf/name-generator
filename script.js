@@ -238,27 +238,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function checkCategoryOverflow() {
         if (categoryScrollContainer && showMoreLessBtn) {
-            // Ensure content is loaded and styles are applied before checking scrollHeight
             requestAnimationFrame(() => {
-                const hasOverflow = categoryScrollContainer.scrollHeight > categoryScrollContainer.clientHeight;
-                if (!hasOverflow && !categoryScrollContainer.classList.contains('expanded')) {
-                    showMoreLessBtn.style.display = 'none';
+                // Recalculate if content is overflowing
+                const isContentOverflowing = categoryScrollContainer.scrollHeight > categoryScrollContainer.clientHeight;
+                const isExpanded = categoryScrollContainer.classList.contains('expanded');
+
+                // Show button if content is overflowing OR if it's expanded (to allow collapsing)
+                if (isContentOverflowing || isExpanded) {
+                    showMoreLessBtn.style.display = 'block';
                 } else {
-                    showMoreLessBtn.style.display = 'block'; // Ensure button is visible if overflow exists or it's expanded
+                    showMoreLessBtn.style.display = 'none';
                 }
             });
         }
     }
 
     if (categoryScrollContainer && showMoreLessBtn) {
-        checkCategoryOverflow(); // Initial check
+        // Initial check
+        checkCategoryOverflow();
 
         showMoreLessBtn.addEventListener('click', () => {
-            const isExpanded = categoryScrollContainer.classList.toggle('expanded');
-            showMoreLessBtn.textContent = isExpanded ? 'Weniger anzeigen' : 'Mehr anzeigen';
-            // After toggling, re-check overflow because the button should be visible if expanded,
-            // or if not expanded but still overflowing (e.g. after resize)
-            checkCategoryOverflow();
+            const isNowExpanded = categoryScrollContainer.classList.toggle('expanded');
+            showMoreLessBtn.textContent = isNowExpanded ? 'Weniger anzeigen' : 'Mehr anzeigen';
+            // After toggling, the visibility logic is handled by checkCategoryOverflow.
+            // If it became expanded, it should be visible.
+            // If it became collapsed, checkCategoryOverflow will determine if it should still be visible due to overflow.
+            checkCategoryOverflow(); // Re-check to update button visibility correctly
         });
 
         window.addEventListener('resize', checkCategoryOverflow); // Check on window resize

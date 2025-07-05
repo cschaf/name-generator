@@ -79,6 +79,7 @@ h1 {
     margin-top: 0px; /* Adjusted margin */
     margin-bottom: 20px; /* Add some space before gender buttons */
     transition: all 0.3s ease;
+    width: 100%; /* Make button full width */
 }
 
 .show-more-less-btn:hover {
