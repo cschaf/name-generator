@@ -231,6 +231,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Namensdaten laden und dann den ersten Namen generieren
     loadNameData();
+
+    // "Show More/Less" Button Funktionalität
+    const categoryScrollContainer = document.getElementById('categoryScrollContainer');
+    const showMoreLessBtn = document.getElementById('showMoreLessBtn');
+
+    if (categoryScrollContainer && showMoreLessBtn) {
+        // Check if scrolling is actually needed
+        const hasOverflow = categoryScrollContainer.scrollHeight > categoryScrollContainer.clientHeight;
+        if (!hasOverflow) {
+            showMoreLessBtn.style.display = 'none'; // Hide button if no overflow
+        }
+
+        showMoreLessBtn.addEventListener('click', () => {
+            const isExpanded = categoryScrollContainer.classList.toggle('expanded');
+            showMoreLessBtn.textContent = isExpanded ? 'Weniger anzeigen' : 'Mehr anzeigen';
+        });
+    }
 });
 
           

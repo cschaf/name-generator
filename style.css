@@ -50,6 +50,37 @@ h1 {
     justify-content: center;
 }
 
+.category-scroll-container {
+    max-height: 120px; /* Initial height for about 2 rows of buttons */
+    overflow-y: hidden;
+    transition: max-height 0.5s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.category-scroll-container.expanded {
+    max-height: 500px; /* Adjust as needed to show all categories */
+    overflow-y: auto;
+}
+
+.show-more-less-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    backdrop-filter: blur(5px);
+    margin-top: 0px; /* Adjusted margin */
+    margin-bottom: 20px; /* Add some space before gender buttons */
+    transition: all 0.3s ease;
+}
+
+.show-more-less-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
 .selection-btn {
     padding: 10px 20px; /* Noch etwas kleineres Padding für mehr Buttons pro Zeile */
     border: none;
@@ -227,14 +258,36 @@ h1 {
         font-size: 2em;
     }
     
-    .selection-buttons {
-        flex-direction: column;
-        gap: 8px; /* Kleinerer Spalt für mobile Ansicht */
+    /* Keep category buttons in a row layout for mobile, allow wrapping */
+    #categoryButtons {
+        flex-direction: row; /* Overwrite column direction for categories */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center buttons */
+    }
+
+    #genderButtons {
+        flex-direction: column; /* Gender buttons can stack */
+        gap: 8px;
     }
     
     .selection-btn {
-        width: 100%; /* Volle Breite für Buttons auf kleinen Bildschirmen */
-        min-width: unset;
+        /* Adjust width for category buttons to allow multiple per row */
+        width: auto; /* Default width */
+        min-width: 100px; /* Allow smaller buttons */
+        flex-grow: 1; /* Allow buttons to grow */
+    }
+
+    /* Ensure gender selection buttons take full width in their column layout */
+    #genderButtons .selection-btn {
+        width: 100%;
+    }
+
+    .category-scroll-container {
+        max-height: 105px; /* Adjust initial height for mobile, approx 2 rows */
+    }
+
+    .category-scroll-container.expanded {
+        max-height: 300px; /* Adjust expanded height for mobile */
     }
 
     .generated-name {
