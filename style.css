@@ -45,16 +45,16 @@ h1 {
 .selection-buttons {
     display: flex;
     flex-wrap: wrap; /* Ermöglicht Umbruch auf kleinen Bildschirmen */
-    gap: 10px; /* Kleinerer Spalt für mehr Buttons */
+    gap: 8px; /* Noch kleinerer Spalt für mehr Buttons */
     margin-bottom: 20px; /* Weniger Abstand */
     justify-content: center;
 }
 
 .selection-btn {
-    padding: 12px 25px; /* Etwas kleineres Padding */
+    padding: 10px 20px; /* Noch etwas kleineres Padding für mehr Buttons pro Zeile */
     border: none;
     border-radius: 25px;
-    font-size: 1em; /* Etwas kleinere Schrift */
+    font-size: 0.9em; /* Kleinere Schrift für mehr Buttons */
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -62,7 +62,7 @@ h1 {
     color: white;
     backdrop-filter: blur(5px);
     flex-grow: 1; /* Ermöglicht Buttons, den verfügbaren Platz auszufüllen */
-    min-width: 120px; /* Mindestbreite für Buttons */
+    min-width: 110px; /* Kleinere Mindestbreite für mehr Buttons pro Zeile */
 }
 
 .selection-btn:hover {

@@ -230,6 +230,58 @@
             { "name": "Reverie", "info": "Tagtraum, poetisch" },
             { "name": "Solara", "info": "Sonne, strahlend" }
         ]
+    },
+    "mythological": {
+        "male": [
+            { "name": "Zeus", "info": "König der Götter (Griechisch)" },
+            { "name": "Thor", "info": "Gott des Donners (Nordisch)" },
+            { "name": "Osiris", "info": "Gott der Unterwelt (Ägyptisch)" },
+            { "name": "Apollo", "info": "Gott des Lichts und der Musik (Griechisch)" },
+            { "name": "Hermes", "info": "Götterbote (Griechisch)" },
+            { "name": "Anubis", "info": "Gott der Totenriten (Ägyptisch)" },
+            { "name": "Loki", "info": "Gott des Schabernacks (Nordisch)" },
+            { "name": "Ares", "info": "Gott des Krieges (Griechisch)" },
+            { "name": "Poseidon", "info": "Gott des Meeres (Griechisch)" },
+            { "name": "Ra", "info": "Sonnengott (Ägyptisch)" }
+        ],
+        "female": [
+            { "name": "Athena", "info": "Göttin der Weisheit (Griechisch)" },
+            { "name": "Freya", "info": "Göttin der Liebe und Schönheit (Nordisch)" },
+            { "name": "Isis", "info": "Göttin der Magie (Ägyptisch)" },
+            { "name": "Hera", "info": "Königin der Götter (Griechisch)" },
+            { "name": "Artemis", "info": "Göttin der Jagd (Griechisch)" },
+            { "name": "Bastet", "info": "Katzengöttin (Ägyptisch)" },
+            { "name": "Frigg", "info": "Göttin der Ehe (Nordisch)" },
+            { "name": "Persephone", "info": "Königin der Unterwelt (Griechisch)" },
+            { "name": "Nut", "info": "Himmelsgöttin (Ägyptisch)" },
+            { "name": "Eos", "info": "Göttin der Morgenröte (Griechisch)" }
+        ]
+    },
+    "futuristic": {
+        "male": [
+            { "name": "Cipher", "info": "Geheimnisvoll und technisch" },
+            { "name": "Jaxon", "info": "Moderne Schreibweise, stark" },
+            { "name": "Orion", "info": "Sternbild, kosmisch" },
+            { "name": "Vector", "info": "Mathematisch und präzise" },
+            { "name": "Zenith", "info": "Höhepunkt, Gipfel" },
+            { "name": "Kael", "info": "Kurz und kraftvoll" },
+            { "name": "Ryler", "info": "Modern und dynamisch" },
+            { "name": "Cygnus", "info": "Sternbild Schwan, elegant" },
+            { "name": "Nexus", "info": "Verbindungspunkt, zentral" },
+            { "name": "Tycho", "info": "Nach Astronom Tycho Brahe" }
+        ],
+        "female": [
+            { "name": "Lyra", "info": "Sternbild, musikalisch" },
+            { "name": "Nova", "info": "Neuer Stern, hell" },
+            { "name": "Astra", "info": "Sternenhaft, himmlisch" },
+            { "name": "Vesper", "info": "Abendstern, geheimnisvoll" },
+            { "name": "Celestia", "info": "Himmlisch, erhaben" },
+            { "name": "Oriana", "info": "Goldener Sonnenaufgang" },
+            { "name": "Seren", "info": "Stern (Walisisch)" },
+            { "name": "Andromeda", "info": "Galaxie, mythologisch" },
+            { "name": "Echo", "info": "Widerhall, subtil" },
+            { "name": "Juno", "info": "Römische Göttin, königlich" }
+        ]
     }
 }
 
