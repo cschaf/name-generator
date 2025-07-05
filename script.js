@@ -205,7 +205,7 @@ function updateFavoritesList() {
                 ${genderEmoji} ${categoryEmoji}
                 <strong>${fav.name}</strong> - ${fav.info}
             </span>
-            <button class="remove-btn" onclick="removeFromFavorites(${index})">❌</button>
+            <button class="remove-btn" onclick="removeFromFavorites(${index})"><i class="fas fa-trash-alt"></i></button>
         `;
         list.appendChild(item);
     });
