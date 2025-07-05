@@ -1,13 +1,18 @@
 // script.js
 
 let currentGender = 'male';
-let currentCategory = 'gen-z'; // Standard-Kategorie
+let currentCategory = ''; // Wird dynamisch gesetzt
 let currentName = null;
 let favorites = [];
 let nameData = {}; // Wird dynamisch geladen
 
 // Objekt zum Speichern der verwendeten Namen pro Kategorie und Geschlecht
-let usedNames = {}; 
+let usedNames = {};
+
+// Referenzen für UI-Elemente, die für "Show More/Less" benötigt werden
+const categoryScrollContainer = document.getElementById('categoryScrollContainer');
+const showMoreLessBtn = document.getElementById('showMoreLessBtn');
+const collapsedHeight = 120; // Define collapsed height in px matching CSS
 
 /**
  * Zeigt eine temporäre Nachricht an.
@@ -26,6 +31,60 @@ function showMessage(message, type = 'info') {
 }
 
 /**
+ * Formatiert einen Kategorie-Schlüssel in einen anzeigefreundlichen Namen.
+ * z.B. "gen-z" -> "Gen-Z", "mythological" -> "Mythological"
+ * @param {string} key - Der Kategorie-Schlüssel.
+ * @returns {string} Der formatierte Name.
+ */
+function formatCategoryName(key) {
+    return key
+        .split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
+
+/**
+ * Erstellt und fügt die Kategorie-Buttons dynamisch hinzu.
+ */
+function populateCategoryButtons() {
+    const categoryButtonsContainer = document.getElementById('categoryButtons');
+    if (!categoryButtonsContainer) return;
+
+    categoryButtonsContainer.innerHTML = ''; // Vorhandene Buttons löschen
+
+    const categories = Object.keys(nameData);
+    if (categories.length === 0) return;
+
+    categories.forEach((categoryKey, index) => {
+        const button = document.createElement('button');
+        button.className = 'selection-btn';
+        button.dataset.category = categoryKey;
+
+        const categoryData = nameData[categoryKey];
+        const icon = categoryData.icon ? categoryData.icon + ' ' : ''; // Add space if icon exists
+
+        button.innerHTML = icon + formatCategoryName(categoryKey);
+
+        if (index === 0) {
+            button.classList.add('active');
+            currentCategory = categoryKey; // Erste Kategorie als Standard setzen
+        }
+
+        button.addEventListener('click', () => {
+            document.querySelectorAll('#categoryButtons .selection-btn').forEach(b => b.classList.remove('active'));
+            button.classList.add('active');
+            currentCategory = button.dataset.category;
+            generateName();
+        });
+        categoryButtonsContainer.appendChild(button);
+    });
+
+    // Aktualisiere den Zustand des "Mehr anzeigen/weniger anzeigen"-Buttons, nachdem die Buttons hinzugefügt wurden
+    checkInitialButtonState();
+}
+
+
+/**
  * Lädt die Namensdaten aus der data.json-Datei.
  */
 async function loadNameData() {
@@ -41,14 +100,19 @@ async function loadNameData() {
         }
         console.log('Namensdaten erfolgreich geladen:', nameData);
 
+        populateCategoryButtons(); // Kategorie-Buttons dynamisch erstellen
+
         // Favoriten aus localStorage laden
         const storedFavorites = localStorage.getItem('favorites');
         if (storedFavorites) {
             favorites = JSON.parse(storedFavorites);
         }
 
-        generateName(); // Ersten Namen generieren, nachdem Daten geladen sind
+        if (currentCategory) { // Nur generieren, wenn eine Kategorie gesetzt ist
+            generateName(); // Ersten Namen generieren, nachdem Daten und Buttons geladen sind
+        }
         updateFavoritesList(); // Favoritenliste aktualisieren
+
     } catch (error) {
         console.error('Fehler beim Laden der Namensdaten:', error);
         showMessage('Fehler beim Laden der Namensdaten. Bitte versuchen Sie es später erneut.', 'error');
@@ -64,7 +128,15 @@ function generateName() {
         return;
     }
 
-    const names = nameData[currentCategory][currentGender];
+    // Check if the category and gender exist in the data
+    if (!nameData[currentCategory] || !nameData[currentCategory].genders || !nameData[currentCategory].genders[currentGender]) {
+        showMessage(`Keine Namensdaten für Kategorie '${formatCategoryName(currentCategory)}' und Geschlecht '${currentGender}' gefunden.`, 'error');
+        document.getElementById('nameDisplay').style.display = 'none';
+        currentName = null;
+        return;
+    }
+
+    const names = nameData[currentCategory].genders[currentGender];
     const currentUsedNames = usedNames[currentCategory][currentGender];
     
     // Wenn alle Namen in der aktuellen Kategorie/Geschlecht verwendet wurden, Liste zurücksetzen
@@ -197,14 +269,10 @@ function updateFavoritesList() {
         } else {
             genderEmoji = '⚧️'; // Transgender symbol for unisex
         }
+
         let categoryEmoji = '';
-        switch(fav.category) {
-            case 'gen-z': categoryEmoji = '🚀'; break;
-            case 'classic': categoryEmoji = '📚'; break;
-            case 'nature': categoryEmoji = '🌳'; break;
-            case 'unique': categoryEmoji = '✨'; break;
-            case 'mythological': categoryEmoji = '🏛️'; break;
-            case 'futuristic': categoryEmoji = '🤖'; break;
+        if (nameData[fav.category] && nameData[fav.category].icon) {
+            categoryEmoji = nameData[fav.category].icon;
         }
 
         item.innerHTML = `
