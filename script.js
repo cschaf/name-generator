@@ -37,7 +37,7 @@ async function loadNameData() {
         nameData = await response.json();
         // usedNames-Objekt initialisieren, nachdem nameData geladen wurde
         for (const category in nameData) {
-            usedNames[category] = { male: [], female: [] };
+            usedNames[category] = { male: [], female: [], unisex: [] };
         }
         console.log('Namensdaten erfolgreich geladen:', nameData);
 
@@ -189,7 +189,14 @@ function updateFavoritesList() {
         const item = document.createElement('div');
         item.className = 'favorite-item';
         // Emoji für Geschlecht und Kategorie anzeigen
-        const genderEmoji = fav.gender === 'male' ? '♂' : '♀';
+        let genderEmoji = '';
+        if (fav.gender === 'male') {
+            genderEmoji = '♂';
+        } else if (fav.gender === 'female') {
+            genderEmoji = '♀';
+        } else {
+            genderEmoji = '⚧️'; // Transgender symbol for unisex
+        }
         let categoryEmoji = '';
         switch(fav.category) {
             case 'gen-z': categoryEmoji = '🚀'; break;
