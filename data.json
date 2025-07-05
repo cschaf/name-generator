@@ -49,7 +49,19 @@
                 { "name": "Wilder", "info": "Frei und ungezähmt" },
                 { "name": "Xander", "info": "Griechisch und stark" },
                 { "name": "Zane", "info": "Hebräisch für 'Geschenk'" },
-                { "name": "Zephyr", "info": "Wie ein sanfter Wind" }
+                { "name": "Zephyr", "info": "Wie ein sanfter Wind" },
+                { "name": "Arlo", "info": "Kurz, modern und freundlich" },
+                { "name": "Bodhi", "info": "Spirituell, bedeutet 'Erwachen' im Sanskrit" },
+                { "name": "Killian", "info": "Irisch, stark und trendy" },
+                { "name": "Levi", "info": "Klassisch mit modernem Vibe" },
+                { "name": "Ronan", "info": "Irisch, 'kleiner Seehund', charmant" },
+                { "name": "August", "info": "Stattlich und zeitlos modern" },
+                { "name": "Flynn", "info": "Abenteuerlich, wie Errol Flynn" },
+                { "name": "Nico", "info": "International und cool" },
+                { "name": "Bowen", "info": "Walisisch, 'Sohn des Owen', frisch" },
+                { "name": "Hayes", "info": "Englischer Nachname, schick und modern" },
+                { "name": "Nash", "info": "Kurz, prägnant und rockig" },
+                { "name": "Otis", "info": "Charmant und retro-cool" }
             ],
             "unisex": [
                 { "name": "Indie", "info": "Unabhängig und kreativ" },
@@ -57,7 +69,17 @@
                 { "name": "Kai", "info": "Kurz, prägnant und cool" },
                 { "name": "Alex", "info": "Kurzform von Alexander/Alexandra, klassisch unisex" },
                 { "name": "Jordan", "info": "Hebräisch, 'herabfließen', beliebt für alle Geschlechter" },
-                { "name": "Casey", "info": "Irisch, 'wachsam', freundlich und offen" }
+                { "name": "Casey", "info": "Irisch, 'wachsam', freundlich und offen" },
+                { "name": "Finley", "info": "Irisch, 'heller Krieger', charmant und vielseitig" },
+                { "name": "Riley", "info": "Fröhlich und energiegeladen" },
+                { "name": "Avery", "info": "Elegant und modern" },
+                { "name": "Parker", "info": "Urban und lässig" },
+                { "name": "Logan", "info": "Schottisch, stark und beliebt" },
+                { "name": "Dylan", "info": "Walisisch, 'Sohn des Meeres', poetisch" },
+                { "name": "Ellis", "info": "Walisisch, freundlich und offen" },
+                { "name": "Morgan", "info": "Keltisch, mystisch und klassisch unisex" },
+                { "name": "Tatum", "info": "Englisch, fröhlich und stark" },
+                { "name": "Remi", "info": "Französisch, verspielt und schick" }
             ],
             "female": [
                 { "name": "Aria", "info": "Melodisch und elegant" },
@@ -103,7 +125,20 @@
                 { "name": "Vega", "info": "Hellster Stern" },
                 { "name": "Xara", "info": "Blume und Schönheit" },
                 { "name": "Yara", "info": "Kleine Schmetterling" },
-                { "name": "Zara", "info": "Blühende Blume" }
+                { "name": "Zara", "info": "Blühende Blume" },
+                { "name": "Isla", "info": "Schottisch, 'Insel', kurz und beliebt" },
+                { "name": "Everly", "info": "Modern und melodiös" },
+                { "name": "Maeve", "info": "Irische Königin, stark und mystisch" },
+                { "name": "Sloane", "info": "Schick, urban und selbstbewusst" },
+                { "name": "Poppy", "info": "Blumig, fröhlich und britisch-cool" },
+                { "name": "Elara", "info": "Name eines Jupitermondes, himmlisch" },
+                { "name": "Ophelia", "info": "Literarisch und dramatisch" },
+                { "name": "Haven", "info": "Sicherer Hafen, sanft und modern" },
+                { "name": "Lennon", "info": "Musikalisch und cool" },
+                { "name": "Blair", "info": "Stark, schottisch und elegant" },
+                { "name": "Zola", "info": "Italienisch/Afrikanisch, lebhaft und einzigartig" },
+                { "name": "Lilith", "info": "Mystisch und unabhängig" },
+                { "name": "Romy", "info": "Kurz, frech und international" }
             ]
         }
     },
@@ -124,14 +159,36 @@
                 { "name": "Christian", "info": "Der Christusgläubige" },
                 { "name": "Martin", "info": "Der dem Mars Geweihte" },
                 { "name": "Stefan", "info": "Der Gekrönte" },
-                { "name": "Andreas", "info": "Der Männliche, Tapfere" }
+                { "name": "Andreas", "info": "Der Männliche, Tapfere" },
+                { "name": "Theodor", "info": "Gottesgeschenk, klassisch und stark" },
+                { "name": "Friedrich", "info": "Friedlicher Herrscher, traditionsreich" },
+                { "name": "Julius", "info": "Römischer Familienname, majestätisch" },
+                { "name": "Arthur", "info": "Legendärer König, edel und zeitlos" },
+                { "name": "Anton", "info": "Wertvoll, aus dem Lateinischen" },
+                { "name": "Vincent", "info": "Der Siegreiche, künstlerisch und stark" },
+                { "name": "Konrad", "info": "Kühner Ratgeber, germanisch" },
+                { "name": "Ludwig", "info": "Berühmter Krieger, königlich" },
+                { "name": "Oskar", "info": "Göttlicher Speer, skandinavisch-klassisch" },
+                { "name": "Ferdinand", "info": "Kühner Beschützer, majestätisch" },
+                { "name": "Jonathan", "info": "Geschenk Gottes, biblisch" },
+                { "name": "Gabriel", "info": "Mann Gottes, Erzengel" },
+                { "name": "Simon", "info": "Der Hörer, biblisch und etabliert" },
+                { "name": "Christoph", "info": "Der Christusträger" },
+                { "name": "Benjamin", "info": "Sohn des Glücks, hebräisch" },
+                { "name": "Jakob", "info": "Gott möge schützen, biblischer Patriarch" }
             ],
             "unisex": [
                 { "name": "Charlie", "info": "Kurzform von Charles/Charlotte, freundlich und klassisch" },
                 { "name": "Jamie", "info": "Kurzform von James/Jaime, beliebt und etabliert" },
                 { "name": "Robin", "info": "Germanisch, 'glänzend durch Ruhm', auch Naturbezug (Rotkehlchen)" },
                 { "name": "Taylor", "info": "Englisch, 'Schneider', beruflicher Nachname, modern als Vorname" },
-                { "name": "Drew", "info": "Kurzform von Andrew/Andrea, stark und kurz" }
+                { "name": "Drew", "info": "Kurzform von Andrew/Andrea, stark und kurz" },
+                { "name": "Sasha", "info": "Kurzform von Alexander/Alexandra, slawisch und schick" },
+                { "name": "Kim", "info": "Kurzform von Kimberly/Joachim, zeitlos und einfach" },
+                { "name": "Jesse", "info": "Hebräisch, 'Geschenk', klassisch und warmherzig" },
+                { "name": "Leslie", "info": "Schottisch, 'Garten von Hulsten', etabliert und sanft" },
+                { "name": "Lee", "info": "Englisch, 'Lichtung', kurz und vielseitig" },
+                { "name": "Dominique", "info": "Französisch, 'dem Herrn gehörend', elegant" }
             ],
             "female": [
                 { "name": "Sophie", "info": "Die Weise, aus dem Griechischen" },
@@ -148,7 +205,21 @@
                 { "name": "Elisabeth", "info": "Mein Gott ist Fülle" },
                 { "name": "Theresa", "info": "Die Jägerin" },
                 { "name": "Margarete", "info": "Die Perle" },
-                { "name": "Amelie", "info": "Die Tüchtige" }
+                { "name": "Amelie", "info": "Die Tüchtige" },
+                { "name": "Mathilda", "info": "Mächtige Kämpferin, stark und elegant" },
+                { "name": "Florentine", "info": "Die Blühende, lateinisch und edel" },
+                { "name": "Isabella", "info": "Gott ist mein Eid, königlich" },
+                { "name": "Caroline", "info": "Die Freie, klassisch und anmutig" },
+                { "name": "Pauline", "info": "Die Kleine, feminin und zeitlos" },
+                { "name": "Antonia", "info": "Die Unschätzbare, römisch und stark" },
+                { "name": "Valerie", "info": "Die Starke, Gesunde" },
+                { "name": "Josefine", "info": "Gott fügt hinzu, elegant" },
+                { "name": "Cecilia", "info": "Die Himmlische, Schutzpatronin der Musik" },
+                { "name": "Eleonora", "info": "Gott ist mein Licht, königlich und lang" },
+                { "name": "Ida", "info": "Die Tätige, kurz und klassisch" },
+                { "name": "Laura", "info": "Der Lorbeerkranz, Symbol des Sieges" },
+                { "name": "Olivia", "info": "Der Olivenbaum, friedlich und beliebt" },
+                { "name": "Veronika", "info": "Die Siegbringende, biblisch" }
             ]
         }
     },
@@ -169,7 +240,18 @@
                 { "name": "Ash", "info": "Esche, alter Baum" },
                 { "name": "Cedar", "info": "Zeder, kraftvoll und aromatisch" },
                 { "name": "Flint", "info": "Feuerstein, hart und zuverlässig" },
-                { "name": "Ridge", "info": "Bergrücken, stark und erhaben" }
+                { "name": "Ridge", "info": "Bergrücken, stark und erhaben" },
+                { "name": "Leif", "info": "Skandinavisch, 'Erbe', naturverbunden" },
+                { "name": "Björn", "info": "Skandinavisch für 'Bär', stark und wild" },
+                { "name": "Cliff", "info": "Felsklippe, stark und unerschütterlich" },
+                { "name": "Hawk", "info": "Falke, scharfsinnig und frei" },
+                { "name": "Basil", "info": "Königliches Kraut, frisch und aromatisch" },
+                { "name": "Sorrel", "info": "Sauerampfer, Pflanze mit rötlicher Farbe" },
+                { "name": "Talon", "info": "Greifvogelkralle, scharf und präzise" },
+                { "name": "Colt", "info": "Junges Pferd, energisch und frei" },
+                { "name": "Linden", "info": "Lindenbaum, sanft und beständig" },
+                { "name": "Oak", "info": "Eiche, Symbol für Stärke und Langlebigkeit" },
+                { "name": "Pike", "info": "Hecht, starker Fisch, auch eine Waffe" }
             ],
             "unisex": [
                 { "name": "River", "info": "Fluss, naturverbunden und fließend" },
@@ -177,7 +259,15 @@
                 { "name": "Rowan", "info": "Eberesche, keltischer Baum des Lebens" },
                 { "name": "Lark", "info": "Lerche, frei und singend" },
                 { "name": "Winter", "info": "Jahreszeit, klar und rein" },
-                { "name": "Vale", "info": "Tal, friedlich und geschützt" }
+                { "name": "Vale", "info": "Tal, friedlich und geschützt" },
+                { "name": "Lake", "info": "See, ruhig und tief" },
+                { "name": "Sunny", "info": "Sonnig, fröhlich und hell" },
+                { "name": "Rain", "info": "Regen, reinigend und lebensspendend" },
+                { "name": "Bay", "info": "Bucht, geschützt und maritim" },
+                { "name": "Cove", "info": "Kleine Bucht, intim und sicher" },
+                { "name": "Aspen", "info": "Zitterpappel, bekannt für Skigebiete" },
+                { "name": "Cypress", "info": "Zypresse, elegant und langlebig" },
+                { "name": "Sequoia", "info": "Mammutbaum, majestätisch und gigantisch" }
             ],
             "female": [
                 { "name": "Willow", "info": "Weidenbaum, anmutig und flexibel" },
@@ -194,7 +284,22 @@
                 { "name": "Brooke", "info": "Bach, sanft und fließend" },
                 { "name": "Blossom", "info": "Blüte, zart und schön" },
                 { "name": "Sage", "info": "Salbei, weise und heilend" },
-                { "name": "Iris", "info": "Schwertlilie, elegant und farbenfroh" }
+                { "name": "Iris", "info": "Schwertlilie, elegant und farbenfroh" },
+                { "name": "Marigold", "info": "Ringelblume, sonnig und golden" },
+                { "name": "Primrose", "info": "Primel, zart und frühlingshaft" },
+                { "name": "Clementine", "info": "Fruchtig, süß und sonnig" },
+                { "name": "Olive", "info": "Symbol des Friedens, mediterran" },
+                { "name": "Meadow", "info": "Wiese, friedlich und idyllisch" },
+                { "name": "Lavender", "info": "Lavendel, beruhigend und duftend" },
+                { "name": "Summer", "info": "Sommer, warm und lebensfroh" },
+                { "name": "Autumn", "info": "Herbst, farbenfroh und gemütlich" },
+                { "name": "Sierra", "info": "Gebirgskette, majestätisch und stark" },
+                { "name": "Savannah", "info": "Weite Grasebene, warm und offen" },
+                { "name": "Magnolia", "info": "Prächtige Blume, edel und südlich" },
+                { "name": "Heather", "info": "Heidekraut, robust und lila blühend" },
+                { "name": "Flora", "info": "Göttin der Blumen, die Pflanzenwelt" },
+                { "name": "Marina", "info": "Vom Meer, maritim und frisch" },
+                { "name": "Juniper", "info": "Wacholder, frisch und lebhaft" }
             ]
         }
     },
@@ -211,7 +316,18 @@
                 { "name": "Rune", "info": "Geheimnis, nordisch" },
                 { "name": "Koa", "info": "Krieger, hawaiianisch" },
                 { "name": "Lior", "info": "Mein Licht, hebräisch" },
-                { "name": "Cael", "info": "Himmlisch, selten und kraftvoll" }
+                { "name": "Cael", "info": "Himmlisch, selten und kraftvoll" },
+                { "name": "Stellan", "info": "Schwedisch, 'ruhig', selten und cool" },
+                { "name": "Cormac", "info": "Irisch, 'Sohn des Wagenlenkers', literarisch und stark" },
+                { "name": "Orson", "info": "Kleiner Bär, ungewöhnlich und charmant" },
+                { "name": "Phineas", "info": "Ägyptisch/Hebräisch, 'das Orakel', extravagant" },
+                { "name": "Torin", "info": "Irisch, 'Anführer', kraftvoll und selten" },
+                { "name": "Amias", "info": "Geliebt, lateinisch, sanft und einzigartig" },
+                { "name": "Callahan", "info": "Irisch, 'hellköpfig', starker Nachname" },
+                { "name": "Evander", "info": "Guter Mann, griechisch, mythologisch und selten" },
+                { "name": "Soren", "info": "Dänisch, 'streng', intellektuell und markant" },
+                { "name": "Rafferty", "info": "Irisch, 'Wohlstandbringer', lebhaft und selten" },
+                { "name": "Cassian", "info": "Lateinisch, 'hohl', elegant und literarisch" }
             ],
             "unisex": [
                 { "name": "Blaise", "info": "Feurig, ungewöhnlich und energisch" },
@@ -219,7 +335,15 @@
                 { "name": "Emerson", "info": "Altenglisch, 'Sohn des Emery', literarisch und modern" },
                 { "name": "Sawyer", "info": "Englisch, 'Holzfäller', abenteuerlich und naturverbunden" },
                 { "name": "Phoenix", "info": "Wiedergeburt, mythologisch und kraftvoll" },
-                { "name": "Indigo", "info": "Tiefblau, künstlerisch und mystisch" }
+                { "name": "Indigo", "info": "Tiefblau, künstlerisch und mystisch" },
+                { "name": "Arden", "info": "Literarisch (Shakespeare), 'großer Wald'" },
+                { "name": "Hollis", "info": "Englisch, 'bei den Stechpalmen wohnend', elegant" },
+                { "name": "Marlowe", "info": "Literarisch, 'vom Hügel am See', geheimnisvoll" },
+                { "name": "Ellington", "info": "Musikalisch (Duke Ellington), anspruchsvoll" },
+                { "name": "Bellamy", "info": "Französisch, 'schöner Freund', charmant" },
+                { "name": "Sheridan", "info": "Irisch, 'Sucher', literarisch und geschlechtsneutral" },
+                { "name": "Tiernan", "info": "Irisch, 'kleiner Herr', edel" },
+                { "name": "Winslow", "info": "Künstlerisch (Winslow Homer), altenglisch, 'Freundeshügel'" }
             ],
             "female": [
                 { "name": "Seraphina", "info": "Feurig, himmlisch und elegant" },
@@ -234,7 +358,18 @@
                 { "name": "Odessa", "info": "Odyssee, abenteuerlich" },
                 { "name": "Reverie", "info": "Tagtraum, poetisch" },
                 { "name": "Solara", "info": "Sonne, strahlend" },
-                { "name": "Lyra", "info": "Sternbild der Leier, melodisch und himmlisch" }
+                { "name": "Lyra", "info": "Sternbild der Leier, melodisch und himmlisch" },
+                { "name": "Calliope", "info": "Muse der epischen Dichtung, 'schöne Stimme'" },
+                { "name": "Cressida", "info": "Griechisch, 'golden', literarisch und selten" },
+                { "name": "Elowen", "info": "Kornisch, 'Ulme', naturverbunden und magisch" },
+                { "name": "Ottilie", "info": "Besitz, Reichtum, deutsch-französisch und schick" },
+                { "name": "Ione", "info": "Veilchen, griechisch, kurz und mystisch" },
+                { "name": "Sunniva", "info": "Sonnengeschenk, skandinavisch und strahlend" },
+                { "name": "Zinnia", "info": "Farbprächtige Blume, lebhaft und einzigartig" },
+                { "name": "Coralie", "info": "Französische Form von Coral, 'Koralle', elegant" },
+                { "name": "Romilly", "info": "Französischer Ortsname, schick und selten" },
+                { "name": "Thisbe", "info": "Babylonische Liebende, mythologisch und tragisch" },
+                { "name": "Jessamine", "info": "Persische Form von Jasmin, poetisch" }
             ]
         }
     },
@@ -253,14 +388,30 @@
                 { "name": "Poseidon", "info": "Gott des Meeres (Griechisch)" },
                 { "name": "Ra", "info": "Sonnengott (Ägyptisch)" },
                 { "name": "Odin", "info": "Allvater der nordischen Götter" },
-                { "name": "Hades", "info": "Herrscher der Unterwelt (Griechisch)" }
+                { "name": "Hades", "info": "Herrscher der Unterwelt (Griechisch)" },
+                { "name": "Mars", "info": "Römischer Gott des Krieges" },
+                { "name": "Janus", "info": "Römischer Gott der Anfänge und Enden" },
+                { "name": "Eros", "info": "Griechischer Gott der Liebe" },
+                { "name": "Tristan", "info": "Held der Artussage, tragisch und romantisch" },
+                { "name": "Hector", "info": "Held von Troja, edel und tapfer" },
+                { "name": "Jason", "info": "Anführer der Argonauten, abenteuerlich" },
+                { "name": "Perseus", "info": "Held, der Medusa besiegte" },
+                { "name": "Horus", "info": "Ägyptischer Himmelsgott, mit Falkenkopf" },
+                { "name": "Seth", "info": "Ägyptischer Gott des Chaos und der Wüste" },
+                { "name": "Tyr", "info": "Nordischer Gott des Krieges und des Rechts" },
+                { "name": "Angus", "info": "Keltischer Gott der Liebe und Jugend" }
             ],
             "unisex": [
                 { "name": "Orion", "info": "Mächtiger Jäger, auch Sternbild (Griechisch)" },
-                { "name": "Artemis", "info": "Göttin der Jagd (Griechisch)" },
+                { "name": "Artemis", "info": "Gottheit der Jagd (Griechisch)" },
                 { "name": "Nyx", "info": "Gottheit der Nacht (Griechisch)" },
                 { "name": "Jupiter", "info": "Römischer König der Götter" },
-                { "name": "Echo", "info": "Bergnymphe aus der griechischen Mythologie" }
+                { "name": "Echo", "info": "Bergnymphe aus der griechischen Mythologie" },
+                { "name": "Aether", "info": "Griechische Urgottheit des Lichts und des Himmels" },
+                { "name": "Chaos", "info": "Der Urzustand, aus dem alles entstand (Griechisch)" },
+                { "name": "Eris", "info": "Göttin der Zwietracht (Griechisch)" },
+                { "name": "Styx", "info": "Fluss der Unterwelt und Gottheit (Griechisch)" },
+                { "name": "Pallas", "info": "Beiname von Athena, bedeutet 'Speerschwinger'" }
             ],
             "female": [
                 { "name": "Athena", "info": "Göttin der Weisheit (Griechisch)" },
@@ -273,7 +424,18 @@
                 { "name": "Nut", "info": "Himmelsgöttin (Ägyptisch)" },
                 { "name": "Eos", "info": "Göttin der Morgenröte (Griechisch)" },
                 { "name": "Daphne", "info": "Nymphe, verwandelt in Lorbeerbaum (Griechisch)" },
-                { "name": "Sif", "info": "Göttin mit goldenem Haar (Nordisch)" }
+                { "name": "Sif", "info": "Göttin mit goldenem Haar (Nordisch)" },
+                { "name": "Diana", "info": "Römische Göttin der Jagd und des Mondes" },
+                { "name": "Minerva", "info": "Römische Göttin der Weisheit und des Handwerks" },
+                { "name": "Venus", "info": "Römische Göttin der Liebe und Schönheit" },
+                { "name": "Circe", "info": "Mächtige Zauberin aus der Odyssee" },
+                { "name": "Ariadne", "info": "Kretische Prinzessin, die Theseus half" },
+                { "name": "Cassandra", "info": "Seherin, deren Warnungen ignoriert wurden" },
+                { "name": "Penelope", "info": "Treue Ehefrau des Odysseus" },
+                { "name": "Morrigan", "info": "Irische Göttin des Krieges und des Schicksals" },
+                { "name": "Rhiannon", "info": "Walische Göttin der Pferde und Vögel" },
+                { "name": "Brighid", "info": "Irische Göttin des Feuers, der Poesie und der Heilung" },
+                { "name": "Thalia", "info": "Griechische Muse der Komödie und der heiteren Poesie" }
             ]
         }
     },
@@ -291,7 +453,16 @@
                 { "name": "Nexus", "info": "Verbindungspunkt, zentral" },
                 { "name": "Tycho", "info": "Nach Astronom Tycho Brahe" },
                 { "name": "Quantum", "info": "Physikalisch und futuristisch" },
-                { "name": "Vortex", "info": "Wirbel, dynamisch und kraftvoll" }
+                { "name": "Vortex", "info": "Wirbel, dynamisch und kraftvoll" },
+                { "name": "Kylo", "info": "Modern, bekannt aus Star Wars" },
+                { "name": "Draven", "info": "Dunkel und kantig, Gothic-Vibe" },
+                { "name": "Cassius", "info": "Römischer Name mit modernem Klang" },
+                { "name": "Jago", "info": "Spanische Form von Jakob, kurz und stark" },
+                { "name": "Torian", "info": "Modern klingend, Variation von Torin" },
+                { "name": "Zorin", "info": "Slawisch, 'Morgenröte', klingt scharf und modern" },
+                { "name": "Kyan", "info": "Moderne Schreibweise von Cian, 'uralt'" },
+                { "name": "Lucian", "info": "Licht, klingt elegant und futuristisch" },
+                { "name": "Roric", "info": "Stark und selten, klingt nach Science-Fiction" }
             ],
             "unisex": [
                 { "name": "Nova", "info": "Neuer Stern, hell und kraftvoll" },
@@ -299,7 +470,14 @@
                 { "name": "Zen", "info": "Kurz, modern und spirituell" },
                 { "name": "Cyber", "info": "Digital und futuristisch" },
                 { "name": "Flux", "info": "Wandel und Bewegung" },
-                { "name": "Storm", "info": "Kraftvoll und unvorhersagbar" }
+                { "name": "Storm", "info": "Kraftvoll und unvorhersagbar" },
+                { "name": "Aero", "info": "Bezug zur Luft, leicht und schnell" },
+                { "name": "Apex", "info": "Gipfel, Spitze, ultimativ" },
+                { "name": "Helix", "info": "Spirale, DNA, wissenschaftlich und elegant" },
+                { "name": "Jory", "info": "Kurz, modern, Variation von Jordan" },
+                { "name": "Kodiak", "info": "Bärenart/Insel, stark und rau" },
+                { "name": "Solstice", "info": "Sonnenwende, astronomisch und bedeutungsvoll" },
+                { "name": "Reign", "info": "Herrschaft, kraftvoll und majestätisch" }
             ],
             "female": [
                 { "name": "Vesper", "info": "Abendstern, geheimnisvoll" },
@@ -308,7 +486,16 @@
                 { "name": "Seren", "info": "Stern (Walisisch)" },
                 { "name": "Andromeda", "info": "Galaxie, mythologisch" },
                 { "name": "Juno", "info": "Römische Göttin, königlich" },
-                { "name": "Elektra", "info": "Strahlend, elektrisch" }
+                { "name": "Elektra", "info": "Strahlend, elektrisch" },
+                { "name": "Xael", "info": "Kurz, mit X, klingt mysteriös und außerirdisch" },
+                { "name": "Iona", "info": "Schottische Insel, klingt rein und modern" },
+                { "name": "Callisto", "info": "Name eines Jupitermondes, 'die Schönste'" },
+                { "name": "Zuri", "info": "Swahili für 'schön', klingt frisch und zukunftsorientiert" },
+                { "name": "Calypso", "info": "Meeresnymphe, klingt exotisch und rhythmisch" },
+                { "name": "Cassiopeia", "info": "Sternbild, Königin aus der Mythologie, majestätisch" },
+                { "name": "Halcyon", "info": "Friedlich, mythischer Vogel" },
+                { "name": "Iridia", "info": "Regenbogen, farbenfroh und leuchtend" },
+                { "name": "Nyxara", "info": "Kombination aus Nyx (Nacht) und Xara (Blume)" }
             ]
         }
     },
@@ -321,10 +508,22 @@
                 { "name": "Alain", "info": "Starker Trainer aus der Kalos-Region" },
                 { "name": "Volkner", "info": "Elektrisierender Arenaleiter aus Sinnoh" },
                 { "name": "Goh", "info": "Ehrgeiziger Trainer, will alle Pokémon fangen" },
-                { "name": "Natural", "info": "Geheimnisvoller König von Team Plasma (N)" }
+                { "name": "Natural", "info": "Geheimnisvoller König von Team Plasma (N)" },
+                { "name": "Ash", "info": "Der ewige Protagonist der Serie (Ash Ketchum)" },
+                { "name": "James", "info": "Das andere Gesicht von Team Rocket" },
+                { "name": "Siegfried", "info": "Der Drachen-Champ der Kanto-Region (Lance)" },
+                { "name": "Tracey", "info": "Pokémon-Beobachter und Zeichner" },
+                { "name": "Gladion", "info": "Cooler und kantiger Rivale aus Alola" },
+                { "name": "Troy", "info": "Steinerner Champ der Hoenn-Region (Steven Stone)" },
+                { "name": "Delion", "info": "Unbesiegbarer Champ der Galar-Region (Leon)" },
+                { "name": "Professor Eich", "info": "Der ursprüngliche Pokémon-Professor (Prof. Oak)" }
             ],
             "unisex": [
-                { "name": "Evoli", "info": "Das Wandlungs-Pokémon mit vielen Entwicklungen (Eevee)" }
+                { "name": "Evoli", "info": "Das Wandlungs-Pokémon mit vielen Entwicklungen (Eevee)" },
+                { "name": "Mew", "info": "Das mysteriöse, erste mythische Pokémon" },
+                { "name": "Jirachi", "info": "Das Wünscher-Pokémon, wacht nur alle 1000 Jahre auf" },
+                { "name": "Shaymin", "info": "Dankbarkeits-Pokémon in Land- und Zenitform" },
+                { "name": "Celebi", "info": "Zeitreisendes Schutz-Pokémon des Waldes" }
             ],
             "female": [
                 { "name": "Misty", "info": "Arenaleiterin von Azuria City" },
@@ -332,7 +531,15 @@
                 { "name": "Lucia", "info": "Selbstbewusste Koordinatorin aus Sinnoh (Dawn)" },
                 { "name": "Serena", "info": "Elegante Performerin aus der Kalos-Region" },
                 { "name": "Jessie", "info": "Hartnäckiges Mitglied von Team Rocket" },
-                { "name": "Cynthia", "info": "Die ungeschlagene Championesse von Sinnoh" }
+                { "name": "Cynthia", "info": "Die ungeschlagene Championesse von Sinnoh" },
+                { "name": "Lilia", "info": "Drachenmeisterin aus der Einall-Region (Iris)" },
+                { "name": "Lilly", "info": "Geheimnisvolle Begleiterin aus Alola (Lillie)" },
+                { "name": "Lana", "info": "Wasser-Expertin und Begleiterin aus Alola" },
+                { "name": "Joy", "info": "Die ikonische Krankenschwester in jedem Pokémon-Center" },
+                { "name": "Sabrina", "info": "Psycho-Arenaleiterin aus Saffronia City" },
+                { "name": "Erika", "info": "Pflanzen-Arenaleiterin aus Prismania City" },
+                { "name": "Sandra", "info": "Drachen-Arenaleiterin aus Ebenholz City (Clair)" },
+                { "name": "Hilda", "info": "Die Protagonistin aus Pokémon Schwarz & Weiß" }
             ]
         }
     },
@@ -345,12 +552,24 @@
                 { "name": "Kratos", "info": "Der Geist von Sparta, Gott des Krieges (God of War)" },
                 { "name": "Ezio", "info": "Meisterassassine der Renaissance (Assassin's Creed)" },
                 { "name": "Leon", "info": "Überlebender von Raccoon City (Resident Evil)" },
-                { "name": "Geralt", "info": "Der Hexer von Riva (The Witcher)" }
+                { "name": "Geralt", "info": "Der Hexer von Riva (The Witcher)" },
+                { "name": "Arthur", "info": "Gesetzloser mit einem Herz aus Gold (Red Dead Redemption 2)" },
+                { "name": "Nathan", "info": "Schatzsucher und Abenteurer (Uncharted)" },
+                { "name": "Snake", "info": "Legendärer Soldat und Spion (Metal Gear Solid)" },
+                { "name": "Chief", "info": "Spartanischer Supersoldat, Retter der Menschheit (Halo)" },
+                { "name": "Joel", "info": "Verhärteter Überlebender in einer post-pandemischen Welt (The Last of Us)" },
+                { "name": "Jin", "info": "Samurai, der zum Geist von Tsushima wird (Ghost of Tsushima)" },
+                { "name": "Deacon", "info": "Biker auf der Suche nach Hoffnung in der Apokalypse (Days Gone)" },
+                { "name": "Ryu", "info": "Der ewige Wanderer und Kämpfer (Street Fighter)" }
             ],
             "unisex": [
                 { "name": "Shepard", "info": "Retter/in der Galaxie (Mass Effect)" },
                 { "name": "Frisk", "info": "Das Menschenkind aus der Unterwelt (Undertale)" },
-                { "name": "Corrin", "info": "Prinz/Prinzessin zweier Königreiche (Fire Emblem)" }
+                { "name": "Corrin", "info": "Prinz/Prinzessin zweier Königreiche (Fire Emblem)" },
+                { "name": "V", "info": "Söldner/in auf der Suche nach Unsterblichkeit (Cyberpunk 2077)" },
+                { "name": "Dragonborn", "info": "Der/Die Drachenblütige, Held/in von Himmelsrand (Skyrim)" },
+                { "name": "Byleth", "info": "Professor/in und Söldner/in (Fire Emblem: Three Houses)" },
+                { "name": "The Traveler", "info": "Weltenwanderer/in auf der Suche nach dem verlorenen Zwilling (Genshin Impact)" }
             ],
             "female": [
                 { "name": "Lara", "info": "Ikonische Archäologin und Abenteurerin (Tomb Raider)" },
@@ -358,7 +577,15 @@
                 { "name": "Samus", "info": "Kopfgeldjägerin im Power Suit (Metroid)" },
                 { "name": "Zelda", "info": "Die weise Prinzessin von Hyrule (The Legend of Zelda)" },
                 { "name": "Chun-Li", "info": "Die erste Kämpferin der Fighting-Game-Geschichte (Street Fighter)" },
-                { "name": "Ellie", "info": "Überlebenskünstlerin in einer harten Welt (The Last of Us)" }
+                { "name": "Ellie", "info": "Überlebenskünstlerin in einer harten Welt (The Last of Us)" },
+                { "name": "Tifa", "info": "Kampfkünstlerin und emotionale Stütze (Final Fantasy VII)" },
+                { "name": "Jill", "info": "S.T.A.R.S.-Mitglied und Überlebenskünstlerin (Resident Evil)" },
+                { "name": "Bayonetta", "info": "Stilvolle Hexe mit unglaublichen Kräften (Bayonetta)" },
+                { "name": "Kassandra", "info": "Griechische Söldnerin mit spartanischem Blut (Assassin's Creed Odyssey)" },
+                { "name": "Senua", "info": "Piktische Kriegerin auf einer Reise in die Hölle (Hellblade)" },
+                { "name": "Faith", "info": "Runnerin in einer dystopischen Stadt (Mirror's Edge)" },
+                { "name": "Aerith", "info": "Die letzte der Cetra, Blumenmädchen (Final Fantasy VII)" },
+                { "name": "Amicia", "info": "Beschützerin ihres Bruders in einem von Pest geplagten Frankreich (A Plague Tale)" }
             ]
         }
     },
@@ -371,10 +598,23 @@
                 { "name": "Anomander", "info": "Herrscher der Tiste Andii (Spiel der Götter)" },
                 { "name": "Rincewind", "info": "Der feige Zauberer der Scheibenwelt (Discworld)" },
                 { "name": "Elric", "info": "Anti-Held und Träger des Sturmbringers" },
-                { "name": "Kvothe", "info": "Der Königsmörder, legendärer Arkanist (Die Königsmörder-Chronik)" }
+                { "name": "Kvothe", "info": "Der Königsmörder, legendärer Arkanist (Die Königsmörder-Chronik)" },
+                { "name": "Gandalf", "info": "Der weise Zauberer, der das Schicksal Mittelerdes lenkt (Herr der Ringe)" },
+                { "name": "Gimli", "info": "Stolzer Zwergenkrieger und Elbenfreund (Herr der Ringe)" },
+                { "name": "Rand", "info": "Der Wiedergeborene Drache, der die Welt retten oder zerstören wird (Das Rad der Zeit)" },
+                { "name": "Drizzt", "info": "Der Dunkelelf, der seinem bösen Erbe entkam (Die vergessenen Reiche)" },
+                { "name": "Kaladin", "info": "Der Windläufer, der die Hoffnungslosen beschützt (Sturmlicht-Chroniken)" },
+                { "name": "Raistlin", "info": "Mächtiger, aber zerbrechlicher Magier mit goldenen Augen (Drachenlanze)" },
+                { "name": "Fitz", "info": "Königsbastard und ausgebildeter Assassine (Die Weitseher-Chronik)" },
+                { "name": "Conan", "info": "Der barbarische Krieger aus Cimmeria" }
             ],
             "unisex": [
-                { "name": "Shadowheart", "info": "Geheimnisvolle Klerikerin des Shar (Baldur's Gate 3)" }
+                { "name": "Shadowheart", "info": "Geheimnisvolle Klerikerin des Shar (Baldur's Gate 3)" },
+                { "name": "Gale", "info": "Zauberer von Wasserdeep, dessen Name unisex ist (Baldur's Gate 3)" },
+                { "name": "Hoid", "info": "Der mysteriöse Weltenwanderer im Cosmere-Universum (Brandon Sanderson)" },
+                { "name": "Kerrigan", "info": "Die Königin der Klingen, einst ein menschlicher Ghost (StarCraft)" },
+                { "name": "Sylvanas", "info": "Die Banshee-Königin, Anführerin der Verlassenen (World of Warcraft)" },
+                { "name": "Moira", "info": "Irischer Name, bedeutet 'Schicksal', passend für Fantasy" }
             ],
             "female": [
                 { "name": "Arwen", "info": "Unsterbliche Elbin, Abendstern ihres Volkes (Herr der Ringe)" },
@@ -382,7 +622,15 @@
                 { "name": "Yennefer", "info": "Mächtige und willensstarke Zauberin (The Witcher)" },
                 { "name": "Daenerys", "info": "Die Mutter der Drachen (Das Lied von Eis und Feuer)" },
                 { "name": "Ciri", "info": "Das Kind der Vorsehung mit besonderen Kräften (The Witcher)" },
-                { "name": "Vin", "info": "Mächtige Allomantin aus Luthadel (Mistborn)" }
+                { "name": "Vin", "info": "Mächtige Allomantin aus Luthadel (Mistborn)" },
+                { "name": "Eowyn", "info": "Die Schildmaid von Rohan, die den Hexenkönig besiegte (Herr der Ringe)" },
+                { "name": "Arya", "info": "Die willensstarke Kämpferin aus dem Hause Stark (Das Lied von Eis und Feuer)" },
+                { "name": "Lyra Belacqua", "info": "Das Mädchen mit dem Alethiometer, Kind des Schicksals (His Dark Materials)" },
+                { "name": "Hermione", "info": "Die klügste Hexe ihrer Zeit (Harry Potter)" },
+                { "name": "Egwene", "info": "Mächtige Aes Sedai und Amyrlin-Sitz (Das Rad der Zeit)" },
+                { "name": "Shallan", "info": "Gelehrte und Lichtweberin mit multiplen Persönlichkeiten (Sturmlicht-Chroniken)" },
+                { "name": "Tauriel", "info": "Hauptmann der Elbenwache im Düsterwald (Der Hobbit Filme)" },
+                { "name": "Moraine", "info": "Aes Sedai auf der Suche nach dem Wiedergeborenen Drachen (Das Rad der Zeit)" }
             ]
         }
     }
