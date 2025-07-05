@@ -236,17 +236,32 @@ document.addEventListener('DOMContentLoaded', function() {
     const categoryScrollContainer = document.getElementById('categoryScrollContainer');
     const showMoreLessBtn = document.getElementById('showMoreLessBtn');
 
-    if (categoryScrollContainer && showMoreLessBtn) {
-        // Check if scrolling is actually needed
-        const hasOverflow = categoryScrollContainer.scrollHeight > categoryScrollContainer.clientHeight;
-        if (!hasOverflow) {
-            showMoreLessBtn.style.display = 'none'; // Hide button if no overflow
+    function checkCategoryOverflow() {
+        if (categoryScrollContainer && showMoreLessBtn) {
+            // Ensure content is loaded and styles are applied before checking scrollHeight
+            requestAnimationFrame(() => {
+                const hasOverflow = categoryScrollContainer.scrollHeight > categoryScrollContainer.clientHeight;
+                if (!hasOverflow && !categoryScrollContainer.classList.contains('expanded')) {
+                    showMoreLessBtn.style.display = 'none';
+                } else {
+                    showMoreLessBtn.style.display = 'block'; // Ensure button is visible if overflow exists or it's expanded
+                }
+            });
         }
+    }
+
+    if (categoryScrollContainer && showMoreLessBtn) {
+        checkCategoryOverflow(); // Initial check
 
         showMoreLessBtn.addEventListener('click', () => {
             const isExpanded = categoryScrollContainer.classList.toggle('expanded');
             showMoreLessBtn.textContent = isExpanded ? 'Weniger anzeigen' : 'Mehr anzeigen';
+            // After toggling, re-check overflow because the button should be visible if expanded,
+            // or if not expanded but still overflowing (e.g. after resize)
+            checkCategoryOverflow();
         });
+
+        window.addEventListener('resize', checkCategoryOverflow); // Check on window resize
     }
 });
 
