@@ -189,7 +189,7 @@ function updateFavoritesList() {
         const item = document.createElement('div');
         item.className = 'favorite-item';
         // Emoji für Geschlecht und Kategorie anzeigen
-        const genderEmoji = fav.gender === 'male' ? '👦' : '👧';
+        const genderEmoji = fav.gender === 'male' ? '♂' : '♀';
         let categoryEmoji = '';
         switch(fav.category) {
             case 'gen-z': categoryEmoji = '🚀'; break;
