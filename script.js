@@ -187,6 +187,8 @@ function updateFavoritesList() {
             case 'classic': categoryEmoji = '📚'; break;
             case 'nature': categoryEmoji = '🌳'; break;
             case 'unique': categoryEmoji = '✨'; break;
+            case 'mythological': categoryEmoji = '🏛️'; break;
+            case 'futuristic': categoryEmoji = '🤖'; break;
         }
 
         item.innerHTML = `
